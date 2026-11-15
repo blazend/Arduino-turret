@@ -25,6 +25,9 @@ Version B:
 - `discord_bot.py` — Discord bot
 
 
+## Troubleshooting
+- IF IT DOESN'T WORK ensure you did step 3
+
 ## Setup
 1. Install dependencies:
    pip install pyserial pyautogui discord.py pygame python-dotenv
@@ -34,9 +37,8 @@ Version B:
    https://www.youtube.com/watch?v=2jOzQWnKc-o
 
 3. Set the correct serial port in the script (`/dev/ttyUSB0` on Linux, 
-   `COM3`-ish on Windows)
-   
-5. Run either script depending on what you want
+   `COM3`-ish on Windows
+4. Run either script depending on what you want
 
 ## Notes
 - Currently listens to all channels the bot is in
