@@ -3,10 +3,21 @@ There's 2 versions of this turret using the same Arduino code but 2 python files
 
 Version A:
 - A laser turret controlled by mouse(if you know Michael Reeves this is basically it)
+  
+
+
+
+
+https://github.com/user-attachments/assets/1fedfe59-efc3-48d7-8fd1-dcdf24560a31
+
+
 
 Version B:
 - Does preprogrammed gestures depending on discord messages
   Right now there's 2 gestures a "Nod" and a "Headshake" depending if a message contains "yes" or "no"(not case sensitive)
+
+https://github.com/user-attachments/assets/eeaec696-3d51-4f5c-a748-b5543b6e3b4e
+  
 
 
 ## Hardware
