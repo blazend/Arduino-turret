@@ -13,6 +13,7 @@ yes = pygame.mixer.Sound("assets/Yes_.mp3")
 
 # Initialize Serial connection to Arduino
 # (Make sure to wrap arduino.write in a try/except block if your hardware isn't always plugged in)
+# Make the port equal to something like COM3 or COM5 etc if on windows 
 try:
   arduino = serial.Serial(port="/dev/ttyUSB0", baudrate=8000, timeout=0.1)
   time.sleep(2)
