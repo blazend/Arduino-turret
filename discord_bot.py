@@ -40,7 +40,7 @@ async def nod():
     y_angle = target_y
     if arduino and arduino.isOpen():
       arduino.write(bytearray([x_angle, y_angle]))
-    await asyncio.sleep(0.3)  # Increased from 0.02 to give the servo time to move
+    await asyncio.sleep(0.3) 
 
 
 async def head_shake():
@@ -51,7 +51,7 @@ async def head_shake():
     x_angle = target_x
     if arduino and arduino.isOpen():
       arduino.write(bytearray([x_angle, y_angle]))
-    await asyncio.sleep(0.15)  # Increased from 0.08
+    await asyncio.sleep(0.15)  
 
 
 @client.event
@@ -61,19 +61,19 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    # Ignore messages sent by the bot itself to prevent infinite loops
+    # Ignore messages sent by the bot itself 
     if message.author == client.user:
         return
 
     print(f"Signal received from {message.author}: {message.content}")
 
-    # Trigger your physical action when a message arrives
+    # Trigger physical action when a message arrives
     if "yes".casefold() in message.content.casefold():
-        await nod()  # Or use head_shake() depending on what you want
+        await nod()  
     elif "no".casefold() in message.content.casefold():
         await head_shake()
 
 
 
-# Run your Discord bot
+
 client.run("PUT YOUR BOT TOKEN HERE")
