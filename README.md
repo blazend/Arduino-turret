@@ -1,5 +1,5 @@
 # Arduino-turret
-There's 2 versions of this turret using the same Arduino code but 2 python files 
+Mouse controlled laser turret and the other is a gesture bot that reacts to discord messages 
 
 Version A:
 - A laser turret controlled by mouse(if you know Michael Reeves this is basically it)
