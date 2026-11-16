@@ -15,6 +15,7 @@ https://github.com/user-attachments/assets/1fedfe59-efc3-48d7-8fd1-dcdf24560a31
 Version B:
 - Does preprogrammed gestures depending on discord messages
   Right now there's 2 gestures a "Nod" and a "Headshake" depending if a message contains "yes" or "no"(not case sensitive)
+- Also uses talking Ben voice lines very goofy ahh
 
 https://github.com/user-attachments/assets/eeaec696-3d51-4f5c-a748-b5543b6e3b4e
   
@@ -29,6 +30,8 @@ https://github.com/user-attachments/assets/eeaec696-3d51-4f5c-a748-b5543b6e3b4e
 - ## Wiring
 - Pan/yaw servo → Pin 9
 - Tilt/pitch servo → Pin 10
+- <img width="739" height="608" alt="image" src="https://github.com/user-attachments/assets/ea91a41e-491a-48f8-881e-e352a104a528" />
+
 
 ## Files
 - `turret.ino` this needs to be loaded on the Arduino first before using the other python files
