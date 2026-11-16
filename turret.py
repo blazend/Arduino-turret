@@ -1,9 +1,9 @@
 import serial
 import time
-import pyautogui  # You might need to 'pip install pyautogui'
+import pyautogui 
 
-# 1. Setup Serial (Change 'COM3' to your Arduino's port)
-# On Mac/Linux, it looks like '/dev/cu.usbmodem14101'
+
+# Make the port equal to something like COM3 or COM5 etc if on windows 
 arduino = serial.Serial(port='/dev/ttyUSB0', baudrate=8000, timeout=0.1)
 time.sleep(2)
 
@@ -23,10 +23,10 @@ try:
         x_angle = int(180 - (mouseX / width) * 180)
         y_angle = int(180 - (mouseY / height) * 180)
 
-        # Send to Arduino as bytes
+        
         arduino.write(bytearray([x_angle, y_angle]))
 
-        time.sleep(0.02)  # Fast update but keeps CPU happy
+        time.sleep(0.02) 
 
 except KeyboardInterrupt:
     print("Stopping...")
