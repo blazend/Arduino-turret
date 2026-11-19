@@ -4,6 +4,15 @@ import serial
 import time
 import discord
 import pygame
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # reads .env and puts its values into the environment
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+if TOKEN is None:
+    raise RuntimeError("DISCORD_TOKEN not found. Check your .env file.")
+
 
 # Initialize pygame mixer
 pygame.mixer.init()
@@ -76,4 +85,4 @@ async def on_message(message):
 
 
 
-client.run("PUT YOUR BOT TOKEN HERE")
+client.run(TOKEN)
